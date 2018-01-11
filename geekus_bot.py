@@ -73,7 +73,11 @@ async def roll(ctx, face):
 
 @bot.command(pass_context=True)
 async def bye(ctx):
-    await bot.say("Goodbye, {}".format(ctx.message.author.mention))
-    sys.exit()
+    for line in ctx.message.author.roles:        
+        if line.name == "Bot Army":
+            await bot.say("Yes, master. Goodbye, {}.".format(ctx.message.author.mention))
+            sys.exit()
+
+    await bot.say("Hey {}, you're not my owner!".format(ctx.message.author.mention))
 
 bot.run("Mzg1MjM5NjA3MTAyNTM3NzI5.DTR8QA.cWkLefBA8J0JMFmXANFiFL-qrNg")
