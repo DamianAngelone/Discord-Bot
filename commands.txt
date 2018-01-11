@@ -1,3 +1,6 @@
-ping$Say 'hello' to Geekus!
+ping$Say hello to Geekus!
 rules$Post the rules of the Discord server.
 commands$Post a list of Geekus' commands. 
+roll$Simulate a dice roll! Ex: gs!roll 10 
+calendar$Show this month's calendar.
+events$[COMING SOON] Display all upcoming club events.
